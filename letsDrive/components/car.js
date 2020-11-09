@@ -40,15 +40,24 @@ class Car{
         this.gasolineBuyBtn.onclick = () => {
             if(this.gasolineBuySelect.value === "g1" && this.money >= 100){
                 this.gasoline += 10;
-                this.money += -100;             
+                this.money += -100;
+                if(this.wear < 0){
+                    this.wear = 0;
+                }  
             }
             else if(this.gasolineBuySelect.value === "g2" && this.money >= 250){
                 this.gasoline += 25;
-                this.money += -250; 
+                this.money += -250;
+                if(this.wear < 0){
+                    this.wear = 0;
+                }  
             }
             else if(this.gasolineBuySelect.value === "g3" && this.money >= 500){
                 this.gasoline += 50;
-                this.money += -500; 
+                this.money += -500;
+                if(this.wear < 0){
+                    this.wear = 0;
+                }  
             }     
             this.gasolinePanel.innerHTML = `Benzín: ${this.gasoline} litrů`;
             this.moneyPanel.innerHTML = `${this.money} Kč`;
