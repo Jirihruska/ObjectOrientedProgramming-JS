@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="../css/car.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container-column">
+        <!-- Panel auta -->
+        <div class="container-row">           
+            <div id="gasolinePanel" class="item">Benzín</div>
+            <div id="moneyPanel"class="item">Peníze</div>
+            <div id="wearPanel" class="item">Opotřebení</div>
+        </div>
+        
+        <div class="container-row">
+            <!-- Koupit benzín -->
+            <div>  
+                <button id="gasolineBuy" class="item">Koupit benzín</button>
+                <select id="gasolineBuySelect">
+                    <option value="g1">10litrů/100 Kč</option>
+                    <option value="g2">25litrů/250Kč</option>
+                    <option value="g3">50litrů/500Kč</option>
+                </select>
+            </div> 
+
+            <!-- Opravit auto -->
+            <div>   
+                <select id="repairBuySelect">
+                    <option value="r1">10%/100Kč</option>
+                    <option value="r2">25%/250Kč</option>
+                    <option value="r3">50%/500Kč</option>
+                </select>
+                <button id="repairBuy" class="item">Opravit auto</button>
+            </div> 
+        </div>
+        <!-- Auto -->
+        <div class="container-row">
+            <button id="startCar" class="item start">Vyrazit</button>
+            <button id="stopCar" class="item stop">Zastavit</button>
+        </div>
+        <!-- Informace o jízdě -->
+        <div class="container-row">           
+            <div id="secondOfRun" class="item"></div>
+            <div id="carInfo" class="item"></div>
+        </div>
+
+    </div>
+
+    <!-- Komponenty -->
+    <script src="../components/car.js"></script>
+    <script src="../components/index.js"></script>       
+</body>
+</html>
